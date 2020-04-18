@@ -1,0 +1,48 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package herencia1;
+import java.util.Scanner;
+/**
+ *
+ * @
+ */
+public class HERENCIA1 {
+
+   /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       public static void main(String[] args){
+       
+         
+        Dog doguno = new Dog();
+        doguno.LlenarDatosPerro();
+        doguno.VerSalida();
+        
+        Dog dogdos = new Dog();
+        dogdos.LlenarDatosPerro();
+        dogdos.VerSalida();
+        
+        Dog dogtres = new Dog();
+        dogtres.LlenarDatosPerro();
+        dogtres.VerSalida();
+        
+        Dog dogcuatro = new Dog();
+        dogcuatro.LlenarDatosPerro();
+        dogcuatro.VerSalida();
+        
+        Dog dogcinco = new Dog();
+        dogcinco.LlenarDatosPerro();
+        dogcinco.VerSalida();
+        {
+        Dog2 perro = new Dog2();
+        Scanner SC= new Scanner (System.in);
+        System.out.println("ingresa parte");
+        perro.portion=SC.nextDouble();
+        // TODO code application logic here
+    }
+        }
+}
