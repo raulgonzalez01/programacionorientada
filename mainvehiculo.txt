@@ -1,0 +1,80 @@
+package vehiculo;
+
+import java.util.Scanner;
+
+  class Vehiculo {
+
+    private String placa, marca, modelo;
+    private int kilometraje;
+
+    Vehiculo(String placa, String marca, String modelo, int kilometraje ) {
+        setPlaca(placa);
+        setMarca(marca);
+        setModelo(modelo);
+        setKilometraje(kilometraje);
+        
+    }
+
+    /* Metodos Modificadores */
+    public void setPlaca(String n) {
+        placa = n;
+    }
+
+    public void setMarca(String a) {
+        marca = a;
+    }
+
+    public void setModelo(String c) {
+        modelo = c;
+    }
+
+    public void setKilometraje(int e) {
+        kilometraje = e;
+    }
+
+    /* Metodos Accesores */
+    public String getPlaca() {
+        return placa;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public int getKilometraje() {
+        return kilometraje;
+    }
+
+    public void mostrarVehiculo() {
+        System.out.print("*\nPlaca:" + getPlaca() + "*\nMarca: " + getMarca() + "\nModelo: " + getModelo() + "\nKilometraje: " + getKilometraje() +"\n" );
+    }
+    
+    
+}
+
+
+public class  MainVehiculo {
+
+    static Scanner entrada = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        //TODO, add your application code
+        String placa, marca, modelo;
+        int kolometraje;
+        System.out.println("ingresar placa: ");
+        placa = entrada.nextLine();
+        System.out.println("ingresar marca: ");
+        marca = entrada.nextLine();
+        System.out.println("ingresar modelo: ");
+        modelo = entrada.nextLine();
+        System.out.println("ingresar kilometraje: ");
+        int kilometraje = entrada.nextInt();
+        Vehiculo e;
+        e = new Vehiculo(placa, marca, modelo, kilometraje);
+        e.mostrarVehiculo();
+    }
+}
