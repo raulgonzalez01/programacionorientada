@@ -1,0 +1,21 @@
+class operacion1
+{
+public static void main(String args[])
+
+{
+
+int num; // se declara la variable num de tipo int
+
+num = 8 ; // se le asigna a num el valor que quires al cuadrado ò al cubo
+
+System.out.println("El valor de num es: " + num);
+
+num = num * 8;
+num = num * 8;
+
+System.out.print("El valor de num ^3 es igual a ");
+
+System.out.println(num);
+ System.out.print ("El numero es un cubo \n");
+}
+}
